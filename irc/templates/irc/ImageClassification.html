@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ImageClassification</title>
+    <link rel="stylesheet" href="{% static 'irc/css/Common.css' %}" media="screen">
+</head>
+
+<body>
+    <div class="row">
+        <h2 class="heading">Image Classification</h2>
+    </div>
+    <div class="row">
+        <div class="column-left">
+            <h2>Input Image</h2>
+        </div>
+        <div class="column-right">
+            <h2>Output Classification</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-left">
+          <img src="{{ input_image }}" alt="Snow" style="width:100%">
+        </div>
+        <div class="column-right">
+          {% if ischecked %}
+            <img src="{{ output }}" alt="Snow" style="width:100%">
+          {% else %}
+            <h2>{{ output }}</h2>
+          {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>

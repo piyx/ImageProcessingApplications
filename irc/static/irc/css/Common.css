@@ -1,0 +1,50 @@
+body {
+  background-image: linear-gradient(#f5f7fa, #fbeced);
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100vh;
+  font-family: monospace;
+}
+
+.heading {
+  font-size: xx-large;
+  font-size: 60px;
+  color: grey;
+}
+
+h2 {
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  border: 2px solid black;
+}
+
+p {
+  line-height: 1cm;
+  margin: 0%;
+  padding: 0%;
+}
+
+.column-left {
+  float: left;
+  width: 45%;
+  padding: 5px;
+}
+
+.column-right {
+  float: right;
+  width: 45%;
+  padding: 5px;
+}
+
+.row {
+  max-height: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
